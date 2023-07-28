@@ -1,5 +1,6 @@
 {
   "name": "caspel",
+  "homepage": "https://gremwiz1.github.io/caspel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +47,7 @@
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
     "@types/react-highlight-words": "^0.16.4",
+    "gh-pages": "^5.0.0",
     "typescript": "^4.9.5"
   }
 }
